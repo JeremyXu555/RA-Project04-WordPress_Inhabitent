@@ -1,0 +1,44 @@
+.flex {
+	display: flex;
+}
+.flex-space-between{
+	justify-content: space-between;
+}
+
+.footer .footer-col{
+	margin-left: 10%;
+	white-space: nowrap;
+}
+
+.footer .logo-text{
+	text-align: right;
+}
+
+.footer .copyright {
+	align-self: center;
+}
+
+footer {
+	flex-direction: column;
+	color: white;
+	min-height: 40vh;
+	background-image: url(../../images/dark-wood@2x.png);
+}
+
+.footer h3{
+	font-family: fontAccentBold;
+}
+
+.footer p {
+	font-family:MerriweatherLight;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+	padding-left: 10px;
+}
+
+.footer img{
+	margin: 10px 10px 0 0;
+}

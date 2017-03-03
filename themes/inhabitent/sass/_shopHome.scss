@@ -1,0 +1,30 @@
+.productType-info .shopStuff {
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	font-family: MerriweatherLight;
+}
+
+
+
+.productType-info .productType {
+  max-width: 23.5%;
+	border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding: 0.75rem;
+  box-sizing: border-box;;
+}
+
+.productType-info h2 {
+	text-align: center;
+	font-family: fontAccentNormal;
+	font-size: 1.5rem;
+	margin: 40px 0;
+}
+
+.productType-info img {
+	width: 30%;
+	height: 30%;
+	display: block;
+	margin: 0 auto;
+}

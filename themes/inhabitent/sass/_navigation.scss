@@ -31,6 +31,9 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.5); 
+	// margin-top: -25px;
 
 	ul {
 		display: none;
@@ -87,6 +90,7 @@ a {
 	a {
 		display: block;
 		text-decoration: none;
+		float: left;
 	}
 
 	.current_page_item > a,
@@ -129,4 +133,21 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+.navIcon {
+	width: 3rem;
+	height: 2rem;
+}
+
+.nav-action{
+	float: right;
+	display: flex;
+}
+
+.menu-primary-menu-links-container {
+	padding-top: 6px;
+}
+
+.menu-primary-menu-links-container li{
+	padding-right: 10px;
 }

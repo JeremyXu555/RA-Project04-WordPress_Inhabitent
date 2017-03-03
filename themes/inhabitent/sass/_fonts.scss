@@ -1,3 +1,22 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+	font-family: fontAccentNormal;
+	src: url(../../fonts/Novecento/Novecentosanswide-Normal.ttf);
+}
+
+@font-face {
+	font-family: fontAccentBold;
+	src: url(../../fonts/Novecento/Novecentosanswide-DemiBold.ttf);
+}
+
+@font-face {
+	font-family:MerriweatherLight;
+	src: url(../../fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+@font-face {
+	font-family: MerriweatherBold;
+	src: url(../../fonts/Merriweather/Merriweather-Bold.ttf);
+}

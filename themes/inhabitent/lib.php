@@ -69,7 +69,7 @@ function get_taxonomy_args($taxonomyName){
 function create_post_and_taxo(){
 
 	$post_info_array = array(
-		"products" => array("Color", "Price"),
+		"products" => array("Type"),
 		"adventures" => array("Date", "Location")
 	);
 
@@ -88,6 +88,15 @@ function create_post_and_taxo(){
 
 add_action("init", "create_post_and_taxo");
 
+// Add the excerpt to Journal Post
+
+add_action( 'init', 'my_add_excerpts_to_pages' );
+
+function my_add_excerpts_to_pages() {
+
+   add_post_type_support( 'page', 'excerpt' );
+
+}
 
 
 
