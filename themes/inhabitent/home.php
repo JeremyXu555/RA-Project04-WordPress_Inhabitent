@@ -58,29 +58,66 @@ get_header();
 <section class=journal>
 <?php 
 		
-			$query_journal = new WP_Query(array(
-								"posts_per_page" => 3,
-								"orderby" => 'name',
-								"order" => 'asc'
-							));	
-			
-
-			while ( $query_journal -> have_posts() ) : $query_journal -> the_post();
-				get_template_part("template-parts/content", "journalHome") ;
+	$query_journal = new WP_Query(array(
+						"posts_per_page" => 3,
+						"orderby" => 'name',
+						"order" => 'asc'
+					));				
+	
+	while ( $query_journal -> have_posts() ) : $query_journal -> the_post();
+		get_template_part("template-parts/content", get_post_type()) ;
 			endwhile;
 ?>
 </section>	
 <!-- JOURNAL -->
 
 <!-- ADVENTURES -->
+<section class="adventures">
+	<h2>LATEST ADVENTURES</h2>
+	<div class="adventure-content">
+	
+		<?php 
+		function return_adventure ($count,$post_ID) {
 
-			<?php while ( have_posts() ) : the_post(); 
+		}
+			$query_adventure = new WP_Query(array(
+					"post_type" => "adventures",				
+			));
+			$index = 0;
+			while ( $query_adventure -> have_posts() ) : $query_adventure -> the_post();
+			 	return_adventure($index,get_the_ID());
+				get_template_part( 'template-parts/content', get_post_type() );				
+				if($index == 0){ // First Image ?>
 					
-				get_template_part( 'template-parts/content', "adventureHome" );
+					<div class="wrapperRight">	
+						
+				<?php
+				}// First Image
 
-			endwhile; ?>
+				if($index == 1) { // Second Image ?> 
+							
+					<div class="wrapperRightBttom">
+
+				<?php
+				}// Second Image
+
+				if($index == 2){ //Third Image ?>
+					
+				<?php } // Third Image
+
+				if($index == 3){ // Last Image ?>
+					</div>
+				</div>
+				<?php }// Last Image
+				$index++;
+
+endwhile; ?>
+
+</div>
+</section>		
 <!-- ADVENTURES -->
-			<?php the_posts_navigation(); ?>
+
+		<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
