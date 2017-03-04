@@ -1,0 +1,46 @@
+.adventure-content {
+	display: flex;
+}
+
+.wrapperRight {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+}
+
+.wrapperRightBottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.storyWrapper {
+	position: relative;
+}
+
+.storyInfo{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.adventure-94 {
+	flex-basis: 50%;
+	margin-right: 10px;
+}
+
+.adventure-73 {
+	border-bottom:10px;
+}
+
+.adventure-73 img {
+	height: 31vh;
+}
+
+.adventure-72 {
+	margin-right:10px;
+}
+
+
+
+
+

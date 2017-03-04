@@ -11,10 +11,11 @@
 if(is_home()){
 	// HOME PAGE
 	$thumb_id = get_post_thumbnail_id();
+	$id = get_the_ID();
 ?>
 
 
-	<div class="storyWrapper">	
+	<div class="storyWrapper adventure-<?php echo $id;?>">	
 			<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( ); ?>
 			<?php endif; ?>		

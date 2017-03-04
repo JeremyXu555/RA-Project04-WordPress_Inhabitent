@@ -1,0 +1,23 @@
+.contact_page {
+	display: flex;
+	padding-top: 72px;
+}
+
+.contact_page .content-area {
+	padding: 3%;
+	width: 67%;
+	border-top: 3px solid #e1e1e1;
+}
+
+.contact_page .widget-area {
+	padding-left: 2%;
+	width: 33%;
+	float: right;
+	border-top: 3px solid #e1e1e1;
+	border-left: 3px solid #e1e1e1;	
+}
+
+.contact_page .widget-contact a{
+	color: black;
+}
+

@@ -1,27 +1,29 @@
+<!-- 
+Template Name: About
+ -->
+
 <?php
-/**
- * The template for displaying all pages.
- *
- * @package Inhabitent_WordPress
- */
 
 get_header(); 
 
 ?>
+	<div class="about-img">
+		<h1 class="about-title"><?php the_title();?></h1>
+	</div>
 
-
-<h1>Page Template</h1>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="about">
+				<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
+				<?php endwhile; // End of the loop. ?>	
+			</div>
+			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

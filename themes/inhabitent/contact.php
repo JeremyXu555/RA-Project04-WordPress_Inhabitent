@@ -1,27 +1,26 @@
+<!-- 
+Template Name: Contact
+ -->
+
 <?php
-/**
- * The template for displaying all pages.
- *
- * @package Inhabitent_WordPress
- */
 
 get_header(); 
 
 ?>
-
-
-<h1>Page Template</h1>
+<div class="contact_page">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="contact">
+				 <div id="map">map</div>
+				<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
-
+				<?php endwhile; // End of the loop. ?>	
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php get_sidebar(); ?>
+</div>
+
 <?php get_footer(); ?>

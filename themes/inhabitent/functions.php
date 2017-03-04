@@ -82,6 +82,7 @@ add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
 /**
  * Enqueue scripts and styles.
  */
+
 function inhabitent_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
@@ -90,6 +91,8 @@ function inhabitent_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	wp_enqueue_script('jquery');
+	wp_enqueue_script('js', get_template_directory_uri().'/js/extra.js');
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
 

@@ -36,9 +36,7 @@
 				COPYRIGHT &copy; 2016 INHABITENT
 				</div>
 
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
+			
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

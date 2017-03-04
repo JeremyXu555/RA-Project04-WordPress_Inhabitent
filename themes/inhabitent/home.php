@@ -84,7 +84,8 @@ get_header();
 					"post_type" => "adventures",				
 			));
 			$index = 0;
-			while ( $query_adventure -> have_posts() ) : $query_adventure -> the_post();
+			
+	while ( $query_adventure -> have_posts() ) : $query_adventure -> the_post();
 			 	return_adventure($index,get_the_ID());
 				get_template_part( 'template-parts/content', get_post_type() );				
 				if($index == 0){ // First Image ?>
@@ -96,7 +97,7 @@ get_header();
 
 				if($index == 1) { // Second Image ?> 
 							
-					<div class="wrapperRightBttom">
+					<div class="wrapperRightBottom">
 
 				<?php
 				}// Second Image
