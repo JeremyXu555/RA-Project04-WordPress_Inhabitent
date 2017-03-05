@@ -30,7 +30,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php inhabitent_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

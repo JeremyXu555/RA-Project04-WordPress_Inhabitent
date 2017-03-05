@@ -856,6 +856,19 @@ a {
 .products-archive article {
   width: 23%; }
 
+.products-arch-metaInfo {
+  display: -ms-flexbox;
+  display: flex; }
+
+.products-single {
+  display: -ms-flexbox;
+  display: flex; }
+
+.products-single .entry-content {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-left: 30px; }
+
 .contact-page {
   display: -ms-flexbox;
   display: flex;
