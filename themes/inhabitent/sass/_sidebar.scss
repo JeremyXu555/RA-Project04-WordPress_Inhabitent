@@ -1,15 +1,15 @@
-.contact_page {
+.contact-page {
 	display: flex;
 	padding-top: 72px;
 }
 
-.contact_page .content-area {
+.contact-page .content-area {
 	padding: 3%;
 	width: 67%;
 	border-top: 3px solid #e1e1e1;
 }
 
-.contact_page .widget-area {
+.contact-page .widget-area {
 	padding-left: 2%;
 	width: 33%;
 	float: right;
@@ -17,7 +17,31 @@
 	border-left: 3px solid #e1e1e1;	
 }
 
-.contact_page .widget-contact a{
+.contact-page .widget-contact a{
 	color: black;
+}
+
+
+// Contact Response
+.contact-page .contact-response {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-page label {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.contact-page input[type="text"],textarea {
+	margin-bottom: 20px;
+	color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+}
+
+.contact-page .btn {
+	width: 20%;
 }
 

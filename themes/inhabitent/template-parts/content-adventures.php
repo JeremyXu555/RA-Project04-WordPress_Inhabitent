@@ -13,8 +13,6 @@ if(is_home()){
 	$thumb_id = get_post_thumbnail_id();
 	$id = get_the_ID();
 ?>
-
-
 	<div class="storyWrapper adventure-<?php echo $id;?>">	
 			<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( ); ?>
@@ -26,9 +24,6 @@ if(is_home()){
 			<a class="btn white-btn" href="#">Read More</a>
 		</div>
 	</div>
-
-
-
 <?php
 } else if(is_archive()){
 // ARCHIVE PAGE

@@ -14,6 +14,7 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<script src="https://use.fontawesome.com/b6d7953a77.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 	<?php wp_head(); ?>
 	</head>
 
@@ -33,7 +34,7 @@
 				</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<a href="#" class="navIcon"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent-white.svg"></a>
+				<a href="" class="navIcon"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent-white.svg"></a>
 				
 				<div class="nav-action">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
