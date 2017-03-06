@@ -16,14 +16,14 @@ get_header(); ?>
 
 			  if(get_post_type()){				
 				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {comments_template();};		
+				if ( get_post_type() == 'post' && (comments_open() || get_comments_number() )) {comments_template();};		
 				}
 		 endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php if(get_post_type()){?>
+<?php if(get_post_type()=="post"){?>
 
 <div class="sidebar-journal-single">
 	<?php get_sidebar(); ?>

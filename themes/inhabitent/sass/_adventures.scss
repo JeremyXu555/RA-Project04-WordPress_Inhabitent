@@ -23,21 +23,31 @@
 	left: 0;
 }
 
-.adventure-94 {
+.adventures .adventure-94 {
 	flex-basis: 50%;
 	margin-right: 10px;
 }
 
-.adventure-73 {
+.adventures .adventure-73 {
 	border-bottom:10px;
 }
 
-.adventure-73 img {
+.adventures .adventure-73 img {
 	height: 31vh;
 }
 
-.adventure-72 {
+.adventures .adventure-72 {
 	margin-right:10px;
+}
+
+.adventures-archive {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.adventures-archive .storyWrapper {
+	width: 49%;
+	margin-right: 10px;
 }
 
 

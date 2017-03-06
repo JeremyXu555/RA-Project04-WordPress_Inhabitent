@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -22,12 +22,19 @@ get_header(); ?>
 			<?php /* Start the Loop */
 			
 							$query_products_archive = new WP_Query(array(
-								"posts_per_page" => 16,
-								"post_type" => "products",
+								"posts_per_page" => 4,
+								"post_type" => "adventures",
 							));					
 			 ?>
+			
+			<?php if(is_archive()){ ?>
 
-			<div class="products-archive">
+			<h2 adventures-archive-title> Latest Adventures </h2>
+
+			<?php }?>
+
+			<div class="adventures<?php if(is_archive()){ echo "-archive";}?>">
+			
 			<?php while ( $query_products_archive -> have_posts() ) : $query_products_archive -> the_post(); ?>
 
 				<?php
