@@ -877,13 +877,13 @@ a {
 .adventures .adventure-72 {
   margin-right: 10px; }
 
-.adventures-archive {
+.archive-adventures {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.adventures-archive .storyWrapper {
+.archive-adventures .storyWrapper {
   width: 49%;
   margin-right: 10px; }
 
@@ -898,20 +898,20 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
-.products-tax, .products-archive img {
+.products-tax, .archive-products img {
   height: 40vh;
   width: 100%; }
 
-.products-tax, .products-archive article {
+.products-tax, .archive-products article {
   margin-right: 20px; }
 
-.products-archive {
+.archive-products {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.products-archive article {
+.archive-products article {
   width: 23%; }
 
 .products-arch-metaInfo {

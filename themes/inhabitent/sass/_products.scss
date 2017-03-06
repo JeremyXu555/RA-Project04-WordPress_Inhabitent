@@ -11,21 +11,21 @@
 	display: flex;
 }
 
-.products-tax,.products-archive img{
+.products-tax,.archive-products img{
 	height: 40vh;
 	width: 100%;
 }
 
-.products-tax,.products-archive article {
+.products-tax,.archive-products article {
 	margin-right: 20px;
 }
 
-.products-archive {
+.archive-products {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.products-archive article {
+.archive-products article {
 	width: 23%;
 }
 

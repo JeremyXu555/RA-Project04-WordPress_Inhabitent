@@ -98,8 +98,11 @@ function my_add_excerpts_to_pages() {
 
 }
 
+// Get archive query based on the post type
 
-
+function get_post_query($post_type){
+	return $post_query = "query_archive_$post_type";
+}
 
 
 

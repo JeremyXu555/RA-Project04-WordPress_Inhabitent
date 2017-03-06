@@ -42,7 +42,7 @@ get_header();
 				<img src="<?php echo get_bloginfo("stylesheet_directory")?>/images/product-type-icons/<?php echo $term->name;?>.svg">
 				<p><?php echo $term->description; ?></p>
 				<p>
-					<a class="btn" href="/"><?php echo $term->name;?> stuff</a>
+					<a class="btn" href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name;?> stuff</a>
 				</p>
 			</div>
 			<?php
