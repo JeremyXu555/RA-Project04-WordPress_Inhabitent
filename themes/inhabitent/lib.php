@@ -104,12 +104,27 @@ function get_post_query($post_type){
 	return $post_query = "query_archive_$post_type";
 }
 
+// add sidebar
 
+function wpdocs_theme_slug_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Main Sidebar', 'textdomain' ),
+        'id'            => 'sidebar-1',
+        'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'textdomain' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
 
-
-
-
-
+// add_action("pre_get_posts","my_awesome_pre_query");
+// function my_awesome_pre_query ($query) {
+// 	if (is_post_type_archive("products")) {
+// 		$query->set(array("posts_per_page",16));
+// 	}
+// }
 
 
 

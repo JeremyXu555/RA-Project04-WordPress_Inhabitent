@@ -10,6 +10,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>	
 	<div class="entry-content">
 		
+		<?php $object = get_field_object("map");
+		echo $object["value"];
+		?>
 		<h2><?php $object = get_field_object("title");	
 		echo $object["value"];?></h2>
 

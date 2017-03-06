@@ -37,6 +37,7 @@ get_header();
 		<div class="shopStuff">
 			<?php
 				foreach($terms as $term) {
+					include(locate_template('template-parts/content-products.php'));
 			?>		
 			<div class="productType">
 				<img src="<?php echo get_bloginfo("stylesheet_directory")?>/images/product-type-icons/<?php echo $term->name;?>.svg">

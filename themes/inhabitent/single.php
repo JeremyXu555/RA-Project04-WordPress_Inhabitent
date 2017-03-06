@@ -26,7 +26,7 @@ get_header(); ?>
 <?php if(get_post_type()=="post"){?>
 
 <div class="sidebar-journal-single">
-	<?php get_sidebar(); ?>
+	<?php dynamic_sidebar('sidebar-1'); ?>
 </div>
 
 <?php } get_footer(); ?>

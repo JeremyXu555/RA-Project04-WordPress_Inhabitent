@@ -11,8 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-
+	 
 			<header class="page-header">
+
 				<?php if(is_tax("Type")){
 					
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -50,7 +51,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php if(is_category("journal")){ ?>
-<div class="journal-sidebar"> <?php get_sidebar(); ?></div>
+<div class="journal-sidebar"> <?php dynamic_sidebar("sidebar-1"); ?></div>
 <?php	}?>
 
 <?php get_footer(); ?>

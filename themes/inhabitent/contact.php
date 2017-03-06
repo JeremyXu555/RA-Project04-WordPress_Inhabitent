@@ -30,6 +30,7 @@ get_header();
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<?php get_sidebar(); ?>
+	<div class="widget-area"><?php dynamic_sidebar("sidebar-1"); ?></div>
 </div>
+
 <?php get_footer(); ?>

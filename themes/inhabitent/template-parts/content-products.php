@@ -4,7 +4,13 @@
  *
  * @package Inhabitent_WordPress
  */
+if (is_home()) {
 
+}elseif (is_archive()) {
+
+}else {
+	// for single
+}
 ?>
  
 
