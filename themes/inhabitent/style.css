@@ -711,9 +711,7 @@ a {
   min-height: 95vh; }
 
 .about-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("../../images/about-hero.jpg") no-repeat;
-  background-size: contain, 100% 100%;
-  min-height: 95vh; }
+  filter: brightness(70%); }
 
 .about-title {
   position: absolute;

@@ -8,6 +8,9 @@ get_header();
 
 ?>
 	<div class="about-img">
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail( ); ?>
+			<?php endif; ?>	
 		<h1 class="about-title"><?php the_title();?></h1>
 	</div>
 
