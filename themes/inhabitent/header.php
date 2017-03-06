@@ -49,4 +49,6 @@
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+			<div id="content" class="site-content<?php if(get_post_type() == 'post' && !is_home()){
+				echo '-journal';
+				}?>">

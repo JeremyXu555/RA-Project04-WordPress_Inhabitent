@@ -7,18 +7,34 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area-<?php if(get_post_type() == 'post') echo 'journal-single';?>">
 		<main id="main" class="site-main" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); 
 
-			<?php get_template_part( 'template-parts/content', get_post_type() ); ?>
+			 get_template_part( 'template-parts/content', get_post_type() ); 			
 
-
-		<?php endwhile; // End of the loop. ?>
+			  if(get_post_type()){				
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) {comments_template();};		
+				}
+		 endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php if(get_post_type()){?>
 
-<?php get_footer(); ?>
+<div class="sidebar-journal-single">
+	<?php get_sidebar(); ?>
+</div>
+
+<?php } get_footer(); ?>
+
+
+
+
+
+
+
+

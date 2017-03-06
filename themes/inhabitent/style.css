@@ -425,7 +425,8 @@ a {
   float: left;
   width: 100%;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 3; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -763,7 +764,9 @@ a {
 
 .journal .post-quickInfo {
   border-top: 3px solid #e1e1e1;
-  padding-left: 20px; }
+  padding-left: 20px;
+  display: -ms-flexbox;
+  display: flex; }
 
 .journal h3 a {
   color: #248a83;
@@ -788,6 +791,51 @@ a {
 
 .journal .detail {
   margin-left: 20px; }
+
+.site-content-journal {
+  display: -ms-flexbox;
+  display: flex; }
+
+.content-area-journal-archive,
+.content-area-journal-single {
+  padding: 3%;
+  width: 67%;
+  border-top: 3px solid #e1e1e1; }
+
+.journal-sidebar,
+.sidebar-journal-single {
+  padding-left: 2%;
+  width: 33%;
+  border-top: 3px solid #e1e1e1;
+  border-left: 3px solid #e1e1e1; }
+
+.journal-archive {
+  margin-top: 30px; }
+
+.journal-archive .entry-header,
+.journal-single .entry-header {
+  position: relative; }
+
+.journal-archive .entry-title,
+.journal-single .entry-title {
+  background-color: #248a83;
+  color: white;
+  position: absolute;
+  top: 0; }
+
+.journal-archive .post-quickInfo,
+.journal-single .post-quickInfo {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #248a83;
+  color: white;
+  position: absolute;
+  bottom: 13px;
+  right: 4px; }
+
+.journal-archive img,
+.journal-single img {
+  width: 100%; }
 
 .adventure-content {
   display: -ms-flexbox;
@@ -929,7 +977,7 @@ a {
       -ms-grid-row-align: center;
       align-self: center; }
 
-footer {
+.site-footer {
   -ms-flex-direction: column;
       flex-direction: column;
   color: white;
