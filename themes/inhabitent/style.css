@@ -726,33 +726,6 @@ a {
 .about h2 {
   text-align: center; }
 
-.productType-info .shopStuff {
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  font-family: MerriweatherLight; }
-
-.productType-info .productType {
-  max-width: 23.5%;
-  border: 1px solid #e1e1e1;
-  border-top-width: 5px;
-  padding: 0.75rem;
-  box-sizing: border-box; }
-
-.productType-info h2 {
-  text-align: center;
-  font-family: fontAccentNormal;
-  font-size: 1.5rem;
-  margin: 40px 0; }
-
-.productType-info img {
-  width: 30%;
-  height: 30%;
-  display: block;
-  margin: 0 auto; }
-
 .journal {
   display: -ms-flexbox;
   display: flex; }
@@ -877,15 +850,42 @@ a {
 .adventures .adventure-72 {
   margin-right: 10px; }
 
-.archive-adventures {
+.post-type-archive-adventures .archive {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.archive-adventures .storyWrapper {
+.post-type-archive-adventures .archive .storyWrapper {
   width: 49%;
   margin-right: 10px; }
+
+.productType-info .shopStuff {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  font-family: MerriweatherLight; }
+
+.productType-info .productType {
+  max-width: 23.5%;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding: 0.75rem;
+  box-sizing: border-box; }
+
+.productType-info h2 {
+  text-align: center;
+  font-family: fontAccentNormal;
+  font-size: 1.5rem;
+  margin: 40px 0; }
+
+.productType-info img {
+  width: 30%;
+  height: 30%;
+  display: block;
+  margin: 0 auto; }
 
 .products a:link,
 .products a:visited {
@@ -894,24 +894,24 @@ a {
 .products a:hover {
   color: #ccc; }
 
-.products-tax {
+.tax-Type .archive {
   display: -ms-flexbox;
   display: flex; }
 
-.products-tax, .archive-products img {
+.tax-Type .archive, .post-type-archive-products .archive img {
   height: 40vh;
   width: 100%; }
 
-.products-tax, .archive-products article {
+.tax-Type .archive, .post-type-archive-products .archive article {
   margin-right: 20px; }
 
-.archive-products {
+.post-type-archive-products .archive {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.archive-products article {
+.post-type-archive-products .archive article {
   width: 23%; }
 
 .products-arch-metaInfo {
