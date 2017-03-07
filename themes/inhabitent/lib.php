@@ -104,7 +104,7 @@ function get_post_query($post_type){
 	return $post_query = "query_archive_$post_type";
 }
 
-// add sidebar
+// Add sidebar
 
 function wpdocs_theme_slug_widgets_init() {
     register_sidebar( array(
@@ -119,9 +119,9 @@ function wpdocs_theme_slug_widgets_init() {
 }
 add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
 
-add_action("pre_get_posts","my_awesome_pre_query");
+add_action("pre_get_posts","inhabitent_pre_query");
 
-function my_awesome_pre_query ($query) {
+function inhabitent_pre_query ($query) {
 	if (is_post_type_archive("products")) {
 		$query->query_vars["posts_per_page"] = 16;
 	}
@@ -167,9 +167,44 @@ function build_adventures_homepage($count){
 					</div>
 				</div>
 				<?php }// Last Image
+}
+
+// Archive Refactoring 
+
+function get_page_header(){
+	if(is_tax("Type")){					
+			the_archive_title( '<h1 class="page-title">', '</h1>' );
+			the_archive_description( '<div class="taxonomy-description">', '</div>');
+			}
+}
+
+function get_content_header(){
+	if(is_post_type_archive("adventures")){ ?>
+
+			<h2 class="adventures-archive-title"> Latest Adventures </h2>
+
+			<?php } elseif(is_post_type_archive("products")){
+
+				$terms = get_terms(array(
+					"taxonomy" => "Type",
+					"hide_empty" => false
+				)); ?>
+			<h2 class="products-archive-title"> SHOP STUFF</h2>
+			<div class="products-nav">
+				<?php	foreach($terms as $term){ ?>		
+					<a href=""><?php echo $term->name;?></a>
+				<?php	} ?>
+			</div>
+
+		<?php	}
 
 }
 
+function get_dynamic_sidebar_arch(){
+	if(is_category("journal")){ ?>
+	<div class="journal-sidebar"> <?php dynamic_sidebar("sidebar-1"); ?></div>
+	<?php	}
+}
 
 
 

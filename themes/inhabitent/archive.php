@@ -13,26 +13,16 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 	 
 			<header class="page-header">
-
-				<?php if(is_tax("Type")){
-					
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				}?>
+				<?php get_page_header();?>
 			</header><!-- .page-header -->
 			
-			<?php if(is_post_type_archive("adventures")){ ?>
-
-			<h2 adventures-archive-title> Latest Adventures </h2>
-
-			<?php } ?>
+			<?php get_content_header() ?>
 
 			<div class="archive">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				
 				<?php
-				 
 					get_template_part( 'template-parts/content', get_post_type() );
 				?>
 
@@ -50,8 +40,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php if(is_category("journal")){ ?>
-<div class="journal-sidebar"> <?php dynamic_sidebar("sidebar-1"); ?></div>
-<?php	}?>
+<?php get_dynamic_sidebar_arch(); ?>
 
 <?php get_footer(); ?>
