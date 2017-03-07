@@ -42,7 +42,7 @@
 			<?php if(is_category("journal")){
 				the_excerpt();
 				?>				
-				<a class="detail btn black-btn">READ MORE --> </a>
+				<a href="<?php echo get_post_permalink();?>" class="detail btn black-btn">READ MORE --> </a>
 			<?php	}?>		
 	
 <?php if(is_single()){ 
@@ -76,19 +76,6 @@
 		
 
 </article><!-- post -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

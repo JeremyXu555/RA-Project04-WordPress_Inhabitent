@@ -33,16 +33,13 @@
 	display: flex;
 }
 
-.tax-Type .archive, .post-type-archive-products .archive img{
+.tax-Type .archive img, .post-type-archive-products .archive img{
 	height: 30vh;
 	width: 100%;
 }
 
-.tax-Type .archive article {
-	margin-right: 20px;
-}
-
-.post-type-archive-products .archive {
+.post-type-archive-products .archive,
+.tax-Type .archive {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -51,7 +48,8 @@
 	padding-top: 5%;
 }
 
-.post-type-archive-products .archive article {
+.post-type-archive-products .archive article,
+.tax-Type .archive article {
 	flex-basis: 23%;
 	margin-top: 2%;
 }
@@ -71,12 +69,14 @@
 
 // Archive page
 
-.post-type-archive .content-area {
+.post-type-archive .content-area,
+.tax-Type .content-area {
 	padding: 3% 1%;
 }
 
 .post-type-archive-products .products-archive-title,
-														.products-nav {
+.post-type-archive-products	.products-nav,
+.tax-Type .page-header {
 	text-align: center;	
 }
 
@@ -91,7 +91,8 @@
 	margin-bottom: 3%;
 }
 
-.post-type-archive-products .entry-content {
+.post-type-archive-products .entry-content,
+.tax-Type .entry-content, {
 	margin:0;
 	border-left: 0 3px solid #e1e1e1;
 	border-right: 0 3px solid #e1e1e1;
@@ -100,7 +101,8 @@
   justify-content: center;
 }
 
-.post-type-archive-products .archive .entry-header {
+.post-type-archive-products .archive .entry-header,
+.tax-Type .entry-header {
 	border-bottom: 7px solid #e1e1e1;
 }
 

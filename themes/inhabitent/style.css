@@ -712,6 +712,11 @@ body {
   color: #fff;
   background-color: transparent; }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
 a {
   text-decoration: none;
   color: white;
@@ -926,14 +931,12 @@ a:visited {
   display: -ms-flexbox;
   display: flex; }
 
-.tax-Type .archive, .post-type-archive-products .archive img {
+.tax-Type .archive img, .post-type-archive-products .archive img {
   height: 30vh;
   width: 100%; }
 
-.tax-Type .archive article {
-  margin-right: 20px; }
-
-.post-type-archive-products .archive {
+.post-type-archive-products .archive,
+.tax-Type .archive {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -944,7 +947,8 @@ a:visited {
   border-top: 3px dotted #e1e1e1;
   padding-top: 5%; }
 
-.post-type-archive-products .archive article {
+.post-type-archive-products .archive article,
+.tax-Type .archive article {
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%;
   margin-top: 2%; }
@@ -962,11 +966,13 @@ a:visited {
       flex-basis: 50%;
   margin-left: 30px; }
 
-.post-type-archive .content-area {
+.post-type-archive .content-area,
+.tax-Type .content-area {
   padding: 3% 1%; }
 
 .post-type-archive-products .products-archive-title,
-.products-nav {
+.post-type-archive-products .products-nav,
+.tax-Type .page-header {
   text-align: center; }
 
 .post-type-archive-products .products-nav a {
@@ -978,7 +984,8 @@ a:visited {
 .post-type-archive-products .products-nav {
   margin-bottom: 3%; }
 
-.post-type-archive-products .entry-content {
+.post-type-archive-products .entry-content,
+.tax-Type .entry-content {
   margin: 0;
   border-left: 0 3px solid #e1e1e1;
   border-right: 0 3px solid #e1e1e1;
@@ -988,7 +995,8 @@ a:visited {
   -ms-flex-pack: center;
       justify-content: center; }
 
-.post-type-archive-products .archive .entry-header {
+.post-type-archive-products .archive .entry-header,
+.tax-Type .entry-header {
   border-bottom: 7px solid #e1e1e1; }
 
 .post-type-archive-products .archive a:link,
