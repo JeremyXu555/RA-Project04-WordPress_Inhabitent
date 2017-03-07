@@ -718,7 +718,7 @@ a {
   cursor: pointer; }
 
 a:visited {
-  color: white; }
+  color: #CCC; }
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("../../images/logos/inhabitent-logo-full.svg") center no-repeat, url("../../images/home-hero.jpg") no-repeat;
@@ -760,9 +760,6 @@ a:visited {
   border-top: 3px solid #e1e1e1;
   padding-left: 20px;
   margin-bottom: 20px; }
-
-.journal a:visited {
-  color: black; }
 
 .journal h2 {
   text-align: center;
@@ -930,20 +927,27 @@ a:visited {
   display: flex; }
 
 .tax-Type .archive, .post-type-archive-products .archive img {
-  height: 40vh;
+  height: 30vh;
   width: 100%; }
 
-.tax-Type .archive, .post-type-archive-products .archive article {
+.tax-Type .archive article {
   margin-right: 20px; }
 
 .post-type-archive-products .archive {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 5%;
+  border-top: 3px dotted #e1e1e1;
+  padding-top: 5%; }
 
 .post-type-archive-products .archive article {
-  width: 23%; }
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  margin-top: 2%; }
 
 .products-arch-metaInfo {
   display: -ms-flexbox;
@@ -957,6 +961,39 @@ a:visited {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   margin-left: 30px; }
+
+.post-type-archive .content-area {
+  padding: 3% 1%; }
+
+.post-type-archive-products .products-archive-title,
+.products-nav {
+  text-align: center; }
+
+.post-type-archive-products .products-nav a {
+  margin-right: 5px;
+  padding-right: 3px;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
+
+.post-type-archive-products .products-nav {
+  margin-bottom: 3%; }
+
+.post-type-archive-products .entry-content {
+  margin: 0;
+  border-left: 0 3px solid #e1e1e1;
+  border-right: 0 3px solid #e1e1e1;
+  border-bottom: 0 3px solid #e1e1e1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.post-type-archive-products .archive .entry-header {
+  border-bottom: 7px solid #e1e1e1; }
+
+.post-type-archive-products .archive a:link,
+.post-type-archive-products .archive a:visited {
+  color: black; }
 
 .contact-page {
   display: -ms-flexbox;
