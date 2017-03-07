@@ -12,13 +12,13 @@
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_posted_by(); ?>
-		</div><!-- .entry-meta -->
+		
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
+
+	<a href="" class="btn black-btn">read more --> </a>
 </article><!-- #post-## -->

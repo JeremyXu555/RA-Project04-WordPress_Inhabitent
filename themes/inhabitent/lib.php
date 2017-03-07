@@ -1,4 +1,10 @@
 <?php
+//Remove the Wordpress Admin Bar CSS
+
+add_action('get_header', 'remove_admin_login_header');
+function remove_admin_login_header() {
+	remove_action('wp_head', '_admin_bar_bump_cb');
+}
 
 function get_post_args($category) {
 
@@ -103,8 +109,12 @@ function my_add_excerpts_to_pages() {
 function get_post_query($post_type){
 	return $post_query = "query_archive_$post_type";
 }
+/*
+	========================================
+							ADD SIDEBAR
+  ========================================
 
-// Add sidebar
+*/
 
 function wpdocs_theme_slug_widgets_init() {
     register_sidebar( array(
