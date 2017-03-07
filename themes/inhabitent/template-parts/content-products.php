@@ -4,16 +4,18 @@
  *
  * @package Inhabitent_WordPress
  */
-if (is_home()) {
+if (is_home()) { ?>
 
-}elseif (is_archive()) {
+	<div class="productType">
+				<img src="<?php echo get_bloginfo("stylesheet_directory")?>/images/product-type-icons/<?php echo $term->name;?>.svg">
+				<p><?php echo $term->description; ?></p>
+				<p>
+					<a class="btn" href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name;?> stuff</a>
+				</p>
+			</div>
 
-}else {
-	// for single
-}
-?>
- 
-
+<?php } else { ?>
+	
 <article id="post-<?php the_ID(); ?>" class="<?php if(is_single()){echo ' products-single';}?>">
 	<header class="entry-header">
 		
@@ -64,3 +66,4 @@ if (is_home()) {
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
+<?php }?>

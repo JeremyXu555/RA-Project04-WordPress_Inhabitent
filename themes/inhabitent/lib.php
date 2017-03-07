@@ -119,13 +119,56 @@ function wpdocs_theme_slug_widgets_init() {
 }
 add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
 
-// add_action("pre_get_posts","my_awesome_pre_query");
-// function my_awesome_pre_query ($query) {
-// 	if (is_post_type_archive("products")) {
-// 		$query->set(array("posts_per_page",16));
-// 	}
-// }
+add_action("pre_get_posts","my_awesome_pre_query");
 
+function my_awesome_pre_query ($query) {
+	if (is_post_type_archive("products")) {
+		$query->query_vars["posts_per_page"] = 16;
+	}
+
+	if($query->is_main_query() && $query->is_home() ) {
+		$query->query_vars["posts_per_page"] = 3;
+	}
+}
+
+// Build query for adventures on home page
+
+function get_adventures_query_homepage(){
+	$query_adventures = new WP_Query(array(
+					"post_type" => "adventures",
+					"posts_per_page" => "4"
+			));
+	return $query_adventures;
+}
+
+// Build Adventure Flexbox Structure on the home page
+
+function build_adventures_homepage($count){
+
+	if($count == 0){ // First Image ?>
+					
+				<div class="wrapperRight">	
+						
+				<?php
+				}// First Image
+
+				if($count == 1) { // Second Image ?> 
+							
+					<div class="wrapperRightBottom">
+
+				<?php
+				}// Second Image
+
+				if($count == 2){ //Third Image ?>
+					
+				<?php } // Third Image
+
+				if($count == 3){ // Last Image ?>
+					</div>
+				</div>
+				<?php }// Last Image
+
+}
 
 
 
