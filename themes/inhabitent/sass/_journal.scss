@@ -3,21 +3,28 @@
 }
 
 .journal .postItem {	
-	margin-left: 2vw;
+	margin: 0 1vw;
 	border: 3px solid #e1e1e1;
 	padding-bottom: 20px;
+	height:100%;
+}
+
+.postItem {
+	position: relative;
 }
 
 .journal .post-quickInfo{
-	border-top: 3px solid #e1e1e1;
-	padding-left: 20px;
 	display: flex;
 }
 
-.journal h3 a{
-	color: #248a83;
-	text-decoration: none;
-	font-size:1.4rem;
+.journal .entry-footer {
+	border-top: 3px solid #e1e1e1;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+.journal a:visited{
+	color: black;
 }
 
 .journal h2 {
@@ -25,6 +32,13 @@
 	font-family: fontAccentNormal;
 	font-size: 1.5rem;
 	margin: 40px 0;
+}
+
+.journal h3 a{
+    color: #248a83;
+    text-decoration: none;
+    font-size:1.4rem;
+    text-transform: uppercase;  
 }
 
 .journal img {
@@ -69,8 +83,7 @@
 	margin-top: 30px;
 }
 
-.journal-archive .entry-header,
-.journal-single .entry-header{
+.journal-archive .entry-header{
 	position: relative;
 }
 

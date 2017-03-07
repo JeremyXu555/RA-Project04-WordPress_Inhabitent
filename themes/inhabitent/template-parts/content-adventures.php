@@ -19,7 +19,7 @@
 			<?php endif; ?>		
 		<div class="storyInfo<?php if(is_single()){echo '-single';}?>">
 			<h3>
-				<a href=""> <?php the_title();?> </a>
+				<a href="<?php echo get_post_permalink();?>"> <?php the_title();?> </a>
 			</h3>
 			
 			<?php if(is_single()){?>
@@ -31,7 +31,7 @@
 			<?php }?>
 
 			<?php if(!is_single()){ ?>
-				<a class="btn white-btn" href="#">Read More</a>	
+				<a class="btn white-btn" href="<?php echo get_post_permalink();?>">Read More</a>	
 			<?php }?>
 		</div>
 	</div>

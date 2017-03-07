@@ -1,3 +1,16 @@
+.adventure-content img{
+	height: 100%;
+}
+
+.adventure-content .storyInfo h3 a,
+.adventure-content .storyInfo h3 a:visited,{
+	font-size: 1.5rem;
+	color: #DDD;
+}
+
+.adventure-content .storyInfo h3 a:hover {
+	color: orange;
+}
 .adventure-content {
 	display: flex;
 }
@@ -26,6 +39,10 @@
 .adventures .adventure-94 {
 	flex-basis: 50%;
 	margin-right: 10px;
+}
+
+.adventures .adventure-94 h3 a {
+	font-size: 3rem;
 }
 
 .adventures .adventure-73 {

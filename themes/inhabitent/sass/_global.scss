@@ -4,6 +4,21 @@ html {
     margin-top: 0;
 }
 
+body{
+    padding: 6px 0 0; 
+}
+
+.content-area {
+    padding: 0 1%;
+}
+
+.home h2 {
+    text-align: center;
+    font-family: fontAccentNormal;
+    font-size: 1.5rem;
+    margin: 40px 0;
+}
+
 .btn{
 	background: #248a83;
     color: #fff;
@@ -31,4 +46,8 @@ a{
 	text-decoration: none;
 	color:white;
 	cursor: pointer;
+}
+
+a:visited {
+    color: white;
 }

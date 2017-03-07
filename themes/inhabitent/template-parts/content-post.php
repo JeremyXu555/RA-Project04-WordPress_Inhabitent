@@ -4,7 +4,6 @@
  *
  * @package Inhabitent_WordPress
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="<?php 
@@ -19,26 +18,36 @@
 				the_post_thumbnail( 'large'); ?>
 				<?php endif; ?>
 			</div>
-			
+		</div>	
+								
+		<div class="entry-footer">
 			<h3 class="entry-title">
-				<a href=""><?php the_title(); ?></a>
-			</h3>		
-						
-			<div class="post-quickInfo">
-				<p><?php inhabitent_posted_on(); ?></p>
-				<p>/ <?php comments_number( '0 Comments', '1 Comment', '% Comments' ) ; ?></p> 	<p>/ <?php inhabitent_posted_by(); ?></p>
-			</div><!-- .entry-meta -->
-		</div>					
+				<a href="<?php echo get_post_permalink();?>"><?php the_title(); ?></a>
+			</h3>	
+			<div class="post-quickInfo">						
+				<p><?php inhabitent_posted_on(); ?> / </p>
+				<p> <?php comments_number( ' 0 Comments', ' 1 Comment', ' % Comments' ) ; ?> </p> 	
+
+				<?php if(!is_home()){ ?>
+				<p>/ <?php inhabitent_posted_by(); ?></p>
+				<?php	}?>
+			</div>
+		</div>
+
+		<?php	if( is_home()){ ?>			
+				<a href="<?php echo get_post_permalink();?>" class="detail btn black-btn">READ ENTRY</a>			
+		<?php	}?>
+
+	</div>							
 			<?php if(is_category("journal")){
 				the_excerpt();
-				} if(! is_single()){ ?>
-				
-				<a class="detail btn black-btn">READ <?php if(is_category("journal")){echo "MORE -->";} else {echo "ENTRY";}?></a>			
-
-				<?php	}?>
-			
-	</div>
-<?php if(is_single()){ ?>		
+				?>				
+				<a class="detail btn black-btn">READ MORE --> </a>
+			<?php	}?>		
+	
+<?php if(is_single()){ 
+	the_content();
+	?>		
 		<footer class="entry-footer">
 			<span class="cat-link">POSTED IN -> 
 				<a href="#">CONTESTS</a>

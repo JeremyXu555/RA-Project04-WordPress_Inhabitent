@@ -35,15 +35,14 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" 
-				class="navIcon"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent-white.svg"></a>
+				class="navIcon">
+				
+				<img src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent-white.svg"></a>
 				
 				<div class="nav-action">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );?>
-					<div class="flex">
-						<?php get_search_form();?>
-					</div>
-					
+						<?php get_search_form();?>					
 				</div>
 					
 			</nav><!-- #site-navigation -->
