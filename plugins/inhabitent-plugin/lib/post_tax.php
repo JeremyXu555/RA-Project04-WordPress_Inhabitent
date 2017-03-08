@@ -227,6 +227,7 @@ function get_content_header(){
 		<?php	}
 }
 
+
 function get_dynamic_sidebar_arch(){
 	if(is_category("journal")){ ?>
 	<div class="journal-sidebar"> <?php dynamic_sidebar("sidebar-1"); ?></div>

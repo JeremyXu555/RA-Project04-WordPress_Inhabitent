@@ -13,11 +13,15 @@
 		<?php $object = get_field_object("map");
 		echo $object["value"];
 		?>
-		<h2><?php $object = get_field_object("title");	
+
+		<h2 style="text-transform: uppercase;"><?php $object = get_field_object("title");	
 		echo $object["value"];?></h2>
 
 		<p><?php $object = get_field_object("content");
 		echo $object["value"];?></p>
+
+		<h2 style="text-transform: uppercase;"><?php $object = get_field_object("email_title");	
+		echo $object["value"];?></h2>
 		
 		<?php
 			wp_link_pages( array(
