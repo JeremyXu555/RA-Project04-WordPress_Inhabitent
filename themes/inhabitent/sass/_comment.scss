@@ -1,0 +1,39 @@
+.single-post .comment-form-author,
+.single-post .comment-form-url,
+.single-post .form-submit{
+	float:left;
+}
+
+.single-post .comment-form-email {
+	float:right;
+}
+
+.single-post .comment-form-author,
+.single-post .comment-form-email {
+	width: 49%;
+}
+
+.single-post .comment-form-url{	
+	width: 100%;
+}
+
+.single-post .comment-form-email input,
+.single-post .comment-form-url input,
+.single-post .comment-form-author input{
+	width: 100%;
+	background-color: #f4f4f4;;
+}
+
+.single-post .comment-form-email label,
+.single-post .comment-form-url label,
+.single-post .comment-form-author label {
+	display: block;
+	text-transform: uppercase;
+	color: orange;
+}
+
+
+
+.single-post .form-submit {
+
+}
