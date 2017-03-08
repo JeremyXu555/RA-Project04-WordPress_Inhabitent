@@ -683,6 +683,19 @@ html {
 body {
   padding: 6px 0 0; }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #248a83;
+  cursor: pointer; }
+
+a:visited {
+  color: #248a83; }
+
 .content-area {
   padding: 0 1%; }
 
@@ -711,19 +724,6 @@ body {
   border: 1px solid #fff;
   color: #fff;
   background-color: transparent; }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer; }
-
-a:visited {
-  color: #CCC; }
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("../../images/logos/inhabitent-logo-full.svg") center no-repeat, url("../../images/home-hero.jpg") no-repeat;
@@ -793,17 +793,19 @@ a:visited {
 
 .site-content-journal {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-top: 35px; }
 
 .content-area-journal-archive,
 .content-area-journal-single {
-  padding: 3%;
+  padding: 2%;
   width: 67%;
   border-top: 3px solid #e1e1e1; }
 
 .journal-sidebar,
 .sidebar-journal-single {
   padding-left: 2%;
+  padding-top: 2%;
   width: 33%;
   border-top: 3px solid #e1e1e1;
   border-left: 3px solid #e1e1e1; }
@@ -828,12 +830,17 @@ a:visited {
   background-color: #248a83;
   color: white;
   position: absolute;
-  bottom: 13px;
-  right: 4px; }
+  bottom: 8px;
+  right: 0; }
 
 .journal-archive img,
 .journal-single img {
   width: 100%; }
+
+.journal-archive .post-quickInfo p,
+.single-post .post-quickInfo p {
+  margin-bottom: 5px;
+  margin-top: 5px; }
 
 .adventure-content img {
   height: 100%; }
@@ -1002,6 +1009,26 @@ a:visited {
 .post-type-archive-products .archive a:link,
 .post-type-archive-products .archive a:visited {
   color: black; }
+
+/*
+
+================================
+			SINGLE PAGE
+================================
+
+*/
+.single-products .site-content {
+  padding: 35px 15px 0; }
+
+.single-products .main-navigation,
+.post-type-archive .main-navigation {
+  border-bottom: 3px solid #e1e1e1; }
+
+.single-products .content-area {
+  margin-top: 10px; }
+
+.single-products .entry-content {
+  margin-top: 0; }
 
 .contact-page {
   display: -ms-flexbox;

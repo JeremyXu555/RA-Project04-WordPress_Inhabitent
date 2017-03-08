@@ -42,21 +42,22 @@
 			<?php if(is_category("journal")){
 				the_excerpt();
 				?>				
-				<a href="<?php echo get_post_permalink();?>" class="detail btn black-btn">READ MORE --> </a>
+				<a href="<?php echo get_post_permalink();?>" class="detail btn black-btn">READ MORE <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
 			<?php	}?>		
 	
 <?php if(is_single()){ 
 	the_content();
 	?>		
 		<footer class="entry-footer">
-			<span class="cat-link">POSTED IN -> 
+			<span class="cat-link">POSTED IN 
+				<i class="fa fa-arrow-right" aria-hidden="true"></i> 
 				<a href="#">CONTESTS</a>
 			</span>
-			<span class="tags-link">TAGGED ->
+			<span class="tags-link">TAGGED 
+				<i class="fa fa-arrow-right" aria-hidden="true"></i>
 				<a href="#">PHOTOGRAPHY, VANS</a> 
 			</span>
-			<div class="social-btns">
-				
+			<div class="social-btns" style="margin-top: 10px;">				
 				<button class="btn black-btn">
 					<i class="fa fa-facebook"></i>
 					Like
@@ -71,10 +72,7 @@
 				</button>						
 			</div>					
 		</footer> <!--entry-footer -->
-
-<?php	}?>
-		
-
+	<?php	}?>
 </article><!-- post -->
 
 

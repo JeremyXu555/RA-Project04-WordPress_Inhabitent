@@ -23,10 +23,6 @@
 	margin-bottom: 20px;
 }
 
-// .journal a:visited{
-// 	color: black;
-// }
-
 .journal h2 {
 	text-align: center;
 	font-family: fontAccentNormal;
@@ -62,11 +58,12 @@
 
 .site-content-journal {
    display: flex;
+   padding-top:35px;
 }
 
 .content-area-journal-archive,
 .content-area-journal-single,{
-	padding: 3%;
+	padding: 2%;
 	width: 67%;
 	border-top: 3px solid #e1e1e1;	
 }
@@ -74,6 +71,7 @@
 .journal-sidebar,
 .sidebar-journal-single {
 	padding-left: 2%;
+	padding-top: 2%;
 	width: 33%;
 	border-top: 3px solid #e1e1e1;
 	border-left: 3px solid #e1e1e1;		
@@ -101,13 +99,19 @@
 	background-color: #248a83;
 	color: white;
 	position: absolute;
-	bottom: 13px;
-	right: 4px;
+	bottom: 8px;
+	right: 0;
 }
 
 .journal-archive img,
 .journal-single img{
 	width: 100%;
+}
+
+.journal-archive .post-quickInfo p,
+.single-post .post-quickInfo p{
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 
 

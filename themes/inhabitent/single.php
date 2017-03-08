@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area-<?php if(get_post_type() == 'post') echo 'journal-single';?>">
+	<div id="primary" class="content-area<?php if(get_post_type() == 'post') echo '-journal-single';?>">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); 

@@ -8,9 +8,26 @@ body{
     padding: 6px 0 0; 
 }
 
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color:#248a83;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #248a83;
+}
+
 .content-area {
     padding: 0 1%;
 }
+
 
 .home h2 {
     text-align: center;
@@ -42,18 +59,4 @@ body{
     background-color: transparent;
 }
 
-ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-}
 
-a{
-	text-decoration: none;
-	color:white;
-	cursor: pointer;
-}
-
-a:visited {
-    color: #CCC;
-}

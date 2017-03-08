@@ -205,9 +205,7 @@ function get_content_header(){
 					<a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name;?></a>
 				<?php	} ?>
 			</div>
-
 		<?php	}
-
 }
 
 function get_dynamic_sidebar_arch(){
@@ -215,7 +213,21 @@ function get_dynamic_sidebar_arch(){
 	<div class="journal-sidebar"> <?php dynamic_sidebar("sidebar-1"); ?></div>
 	<?php	}
 }
+// CUSTOM URL FOR JOURNAL ARCHIVES
+add_action('init', function(){
 
+	add_rewrite_rule('journals', 'category/uncategorized/', 'top');
+
+	flush_rewrite_rules();
+});
+
+// Upload .svg file to the wordpress
+
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 
 
 ?>
