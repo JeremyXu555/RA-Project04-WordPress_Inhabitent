@@ -5,7 +5,12 @@ add_action('get_header', 'remove_admin_login_header');
 function remove_admin_login_header() {
 	remove_action('wp_head', '_admin_bar_bump_cb');
 }
+/*
+	================================================================================
+							ADD CUSTOM POST TYPE AND TAXONOMY
+  ================================================================================
 
+*/
 function get_post_args($category) {
 
 	$labels = array(
@@ -141,8 +146,13 @@ function inhabitent_pre_query ($query) {
 	}
 }
 
-// Build query for adventures on home page
 
+/*
+	================================================================================
+							BUILD QUERY FRO ADVENTURE ON THE HOME PAGE
+  ================================================================================
+
+*/
 function get_adventures_query_homepage(){
 	$query_adventures = new WP_Query(array(
 					"post_type" => "adventures",
@@ -150,8 +160,12 @@ function get_adventures_query_homepage(){
 			));
 	return $query_adventures;
 }
+/*
+	================================================================================
+							BUILD ADVENTURE FLEXBOX STRUCTURE ON THE HOME PAGE
+  ================================================================================
 
-// Build Adventure Flexbox Structure on the home page
+*/
 
 function build_adventures_homepage($count){
 
@@ -179,7 +193,12 @@ function build_adventures_homepage($count){
 				<?php }// Last Image
 }
 
-// Archive Refactoring 
+/*
+	================================================================================
+							ARCHIVE REFRACTORING
+  ================================================================================
+
+*/
 
 function get_page_header(){
 	if(is_tax("Type")){					
@@ -213,7 +232,14 @@ function get_dynamic_sidebar_arch(){
 	<div class="journal-sidebar"> <?php dynamic_sidebar("sidebar-1"); ?></div>
 	<?php	}
 }
-// CUSTOM URL FOR JOURNAL ARCHIVES
+
+/*
+	================================================================================
+							CUSTOM URL FOR JOURNAL ARCHIVES
+  ================================================================================
+
+*/
+
 add_action('init', function(){
 
 	add_rewrite_rule('journals', 'category/uncategorized/', 'top');
@@ -221,7 +247,12 @@ add_action('init', function(){
 	flush_rewrite_rules();
 });
 
-// Upload .svg file to the wordpress
+/*
+	================================================================================
+							UPLOAD .svg FILE TO WORDPRESS
+  ================================================================================
+
+*/
 
 function cc_mime_types($mimes) {
   $mimes['svg'] = 'image/svg+xml';

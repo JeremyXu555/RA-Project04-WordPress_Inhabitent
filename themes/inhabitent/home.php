@@ -69,21 +69,18 @@ get_header();
 
   endwhile; ?>
 	</div>
+	<a class="btn" href="<?php echo get_post_type_archive_link("adventures");?>">more adventures</a>
+	
 </section>		
 <!-- ADVENTURES -->
+	<?php else : ?>
 
-		<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+		<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-
 <?php get_footer(); ?>
-
 

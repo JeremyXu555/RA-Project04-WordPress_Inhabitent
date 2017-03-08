@@ -17,6 +17,14 @@
 	display: flex;
 }
 
+.post-quickInfo p{
+	font-family: MerriweatherLight;
+}
+
+.entry-title {
+	font-family: MerriweatherBold;
+}
+
 .journal .entry-footer {
 	border-top: 3px solid #e1e1e1;
 	padding-left: 20px;
@@ -112,6 +120,11 @@
 .single-post .post-quickInfo p{
 	margin-bottom: 5px;
 	margin-top: 5px;
+}
+
+.category-journal .entry-footer a,
+.single-post .entry-footer a,{
+	font-size:2rem;
 }
 
 

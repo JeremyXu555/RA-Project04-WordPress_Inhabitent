@@ -33,7 +33,7 @@
 .storyInfo{
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 5%;
 }
 
 .adventures .adventure-94 {
@@ -60,12 +60,71 @@
 .post-type-archive-adventures .archive {
 	display: flex;
 	flex-wrap: wrap;
+	border-top: 3px dotted #e1e1e1;
+	justify-content: space-between;
+	padding-top: 30px;
 }
 
 .post-type-archive-adventures .archive .storyWrapper {
-	width: 49%;
-	margin-right: 10px;
+	width: 49%;	
 }
+
+.home .adventure-content {
+	margin-bottom: 30px;
+}
+
+/*
+	================================================================================
+						ARCHIVE PAGE 
+  ================================================================================
+
+*/
+.adventures-archive-title {
+	text-align: center;
+	font-family: fontAccentNormal;
+	font-size:2.5rem;
+}
+
+.post-type-archive-adventures a {
+	color: white;
+}
+
+.post-type-archive-adventures h3{
+	font-size: 2rem;
+}
+
+
+
+/*
+	================================================================================
+						SINGLE PAGE 
+  ================================================================================
+
+*/
+
+.single-adventures .content-area {
+	padding: 33px 0;
+}
+
+.single-adventures .storyInfo-single,
+.single-adventures .adventure-social-btns,
+.single-adventures p{
+	padding: 0 16%;
+}
+
+.single-adventures .storyInfo-single a {
+	color: black;
+	font-size: 2rem;
+}
+
+.single-adventures .storyInfo-single .adventure-author {
+	text-transform: uppercase;
+}
+
+.single-adventures .site-footer p{
+	padding:0;
+}
+
 
 
 

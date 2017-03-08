@@ -28,6 +28,10 @@ a:visited {
     padding: 0 1%;
 }
 
+.home .site-content {
+    padding-bottom: 10vh;
+}
+
 
 .home h2 {
     text-align: center;
@@ -57,6 +61,13 @@ a:visited {
 	border: 1px solid #fff;
     color: #fff;
     background-color: transparent;
+}
+
+.category-journal .entry-footer a,
+.single-post .entry-footer a,
+.home .shopStuff a,
+.home .adventures a{
+    color: white;
 }
 
 

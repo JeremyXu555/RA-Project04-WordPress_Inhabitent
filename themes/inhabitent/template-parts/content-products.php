@@ -31,7 +31,7 @@ if (is_home()) { ?>
 		<div class="<?php if(is_single()){ echo '';}
 		else {echo 'products-arch-metaInfo';}
 		?>">
-			<p>
+			<p class="<?php if(is_single()){ echo 'product-single-title';}?>">
 				<?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
 			</p>
 			<p>

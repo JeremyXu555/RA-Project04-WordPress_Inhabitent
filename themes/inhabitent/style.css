@@ -699,6 +699,9 @@ a:visited {
 .content-area {
   padding: 0 1%; }
 
+.home .site-content {
+  padding-bottom: 10vh; }
+
 .home h2 {
   text-align: center;
   font-family: fontAccentNormal;
@@ -724,6 +727,12 @@ a:visited {
   border: 1px solid #fff;
   color: #fff;
   background-color: transparent; }
+
+.category-journal .entry-footer a,
+.single-post .entry-footer a,
+.home .shopStuff a,
+.home .adventures a {
+  color: white; }
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("../../images/logos/inhabitent-logo-full.svg") center no-repeat, url("../../images/home-hero.jpg") no-repeat;
@@ -760,6 +769,12 @@ a:visited {
 .journal .post-quickInfo {
   display: -ms-flexbox;
   display: flex; }
+
+.post-quickInfo p {
+  font-family: MerriweatherLight; }
+
+.entry-title {
+  font-family: MerriweatherBold; }
 
 .journal .entry-footer {
   border-top: 3px solid #e1e1e1;
@@ -842,6 +857,10 @@ a:visited {
   margin-bottom: 5px;
   margin-top: 5px; }
 
+.category-journal .entry-footer a,
+.single-post .entry-footer a {
+  font-size: 2rem; }
+
 .adventure-content img {
   height: 100%; }
 
@@ -877,7 +896,7 @@ a:visited {
 .storyInfo {
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 5%; }
 
 .adventures .adventure-94 {
   -ms-flex-preferred-size: 50%;
@@ -900,11 +919,58 @@ a:visited {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  border-top: 3px dotted #e1e1e1;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-top: 30px; }
 
 .post-type-archive-adventures .archive .storyWrapper {
-  width: 49%;
-  margin-right: 10px; }
+  width: 49%; }
+
+.home .adventure-content {
+  margin-bottom: 30px; }
+
+/*
+	================================================================================
+						ARCHIVE PAGE 
+  ================================================================================
+
+*/
+.adventures-archive-title {
+  text-align: center;
+  font-family: fontAccentNormal;
+  font-size: 2.5rem; }
+
+.post-type-archive-adventures a {
+  color: white; }
+
+.post-type-archive-adventures h3 {
+  font-size: 2rem; }
+
+/*
+	================================================================================
+						SINGLE PAGE 
+  ================================================================================
+
+*/
+.single-adventures .content-area {
+  padding: 33px 0; }
+
+.single-adventures .storyInfo-single,
+.single-adventures .adventure-social-btns,
+.single-adventures p {
+  padding: 0 16%; }
+
+.single-adventures .storyInfo-single a {
+  color: black;
+  font-size: 2rem; }
+
+.single-adventures .storyInfo-single .adventure-author {
+  text-transform: uppercase; }
+
+.single-adventures .site-footer p {
+  padding: 0; }
 
 .productType-info .shopStuff {
   display: -ms-flexbox;
@@ -1030,6 +1096,10 @@ a:visited {
 .single-products .entry-content {
   margin-top: 0; }
 
+.single-products .product-single-title a {
+  color: orange;
+  font-size: 3rem; }
+
 .contact-page {
   display: -ms-flexbox;
   display: flex;
@@ -1124,4 +1194,4 @@ a:visited {
   padding-left: 10px; }
 
 .footer img {
-  margin: 10px 10px 0 0; }
+  padding: 7%; }
