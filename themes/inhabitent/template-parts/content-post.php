@@ -51,11 +51,15 @@
 		<footer class="entry-footer">
 			<span class="cat-link">POSTED IN 
 				<i class="fa fa-arrow-right" aria-hidden="true"></i> 
-				<a href="#">CONTESTS</a>
+				<a href="#" style="color: #248a83; font-size: 1.2rem;"><?php 
+					$catArray = get_the_category();
+					echo $catArray[0]->cat_name;?></a>
 			</span>
 			<span class="tags-link">TAGGED 
 				<i class="fa fa-arrow-right" aria-hidden="true"></i>
-				<a href="#">PHOTOGRAPHY, VANS</a> 
+				<a href="#" style="color: #248a83; font-size: 1.2rem;">
+				<?php $t = wp_get_post_tags($post->ID); echo $t[0]-> name;?>	
+				</a> 
 			</span>
 			<div class="social-btns" style="margin-top: 10px;">				
 				<button class="btn black-btn">
