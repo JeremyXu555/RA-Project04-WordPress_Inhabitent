@@ -26,9 +26,9 @@
 						<!-- contact info -->
 						<div class="footer-col">
 							<h3>BUSINESS HOURS</h3>
-							<P>Monday-Friday: Never rest</P>
-							<p>Saturday: 12:00am to 12:00pm</p>
-							<p>Sunday: Wide Open, all food is free!</p>
+							<P><strong>Monday-Friday:</strong> Never rest</P>
+							<p><strong>Saturday:</strong> 12:00am to 12:00pm</p>
+							<p><strong>Sunday:</strong> Wide Open, all food is free!</p>
 						</div>
 					</div>
 				<!-- business hours -->

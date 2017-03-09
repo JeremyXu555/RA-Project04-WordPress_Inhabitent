@@ -37,7 +37,7 @@
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" 
 				class="navIcon">
 				
-				<img src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent-white.svg"></a>
+				<img src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent.svg"></a>
 				
 				<div class="nav-action">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>

@@ -78,6 +78,7 @@
 .post-type-archive-products	.products-nav,
 .tax-Type .page-header {
 	text-align: center;	
+	font-family: fontAccentNormal;
 }
 
 .post-type-archive-products .products-nav a {
@@ -110,6 +111,17 @@
 .post-type-archive-products .archive a:visited,{
 	color: black;
 }
+/*
+
+================================
+			TAXONOMY PAGE
+================================
+
+*/
+.tax-Type .main-navigation {
+	border-bottom: 3px solid #e1e1e1;
+}
+
 
 /*
 

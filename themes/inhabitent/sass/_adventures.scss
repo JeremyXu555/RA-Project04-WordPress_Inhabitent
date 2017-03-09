@@ -103,7 +103,7 @@
 */
 
 .single-adventures .content-area {
-	padding: 33px 0;
+	padding: 0;
 }
 
 .single-adventures .storyInfo-single,
@@ -123,6 +123,15 @@
 
 .single-adventures .site-footer p{
 	padding:0;
+}
+
+.single-adventures .main-navigation {
+	// border-bottom: 3px solid #e1e1e1;
+	background-color: hsla(0,0%,100%,0);
+}
+
+.single-adventures .main-navigation a{
+	color: white
 }
 
 

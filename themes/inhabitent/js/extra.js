@@ -29,8 +29,20 @@ if(x == null || x==""){
 	alert("Subject must be filled out");
 	return false;
 }
-
 document.getElementById("contact-response-form").submit();
 }
 
-$("#btnSubmit").click(validateForm);
+
+
+$(document).ready(function () {
+
+	$("#btnSubmit").click(validateForm);
+
+});
+
+
+
+
+
+
+

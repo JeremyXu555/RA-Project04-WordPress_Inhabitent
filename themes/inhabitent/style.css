@@ -403,6 +403,9 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.required {
+  color: red; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -502,6 +505,12 @@ a {
 
 .menu-primary-menu-links-container li {
   padding-right: 10px; }
+
+.home .main-navigation {
+  background-color: rgba(255, 255, 255, 0); }
+
+.home .main-navigation a {
+  color: white; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -675,6 +684,32 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-about .main-navigation {
+  background-color: rgba(255, 255, 255, 0); }
+
+.page-template-about .main-navigation a {
+  color: white; }
+
+.page-template-thank_you .thank-you-page {
+  padding: 35px 20px 0; }
+
+.page-template-thank_you .thank-you-page .thank-you-title {
+  font-family: fontAccentBold; }
+
+.page-template-thank_you .thank-you-page .thank-you-content {
+  font-family: fontAccentNormal; }
+
+.page-template-thank_you .thank-you-page a {
+  font-family: fontAccentNormal;
+  color: orange; }
+
+.page-template-thank_you .thank-you-page {
+  text-align: center; }
+
+.page-template-thank_you .thumbImg img {
+  height: 40vh;
+  width: 50%; }
+
 html {
   line-height: 1.75rem;
   box-sizing: border-box;
@@ -744,8 +779,9 @@ a:visited {
 
 .about-title {
   position: absolute;
-  left: 50%;
-  top: 50%; }
+  left: 45%;
+  top: 50%;
+  color: white; }
 
 .about .entry-content {
   margin: 0 10rem; }
@@ -983,7 +1019,7 @@ a:visited {
 
 */
 .single-adventures .content-area {
-  padding: 33px 0; }
+  padding: 0; }
 
 .single-adventures .storyInfo-single,
 .single-adventures .adventure-social-btns,
@@ -999,6 +1035,12 @@ a:visited {
 
 .single-adventures .site-footer p {
   padding: 0; }
+
+.single-adventures .main-navigation {
+  background-color: rgba(255, 255, 255, 0); }
+
+.single-adventures .main-navigation a {
+  color: white; }
 
 .productType-info .shopStuff {
   display: -ms-flexbox;
@@ -1074,7 +1116,8 @@ a:visited {
 .post-type-archive-products .products-archive-title,
 .post-type-archive-products .products-nav,
 .tax-Type .page-header {
-  text-align: center; }
+  text-align: center;
+  font-family: fontAccentNormal; }
 
 .post-type-archive-products .products-nav a {
   margin-right: 5px;
@@ -1107,6 +1150,16 @@ a:visited {
 /*
 
 ================================
+			TAXONOMY PAGE
+================================
+
+*/
+.tax-Type .main-navigation {
+  border-bottom: 3px solid #e1e1e1; }
+
+/*
+
+================================
 			SINGLE PAGE
 ================================
 
@@ -1131,7 +1184,7 @@ a:visited {
 .contact-page {
   display: -ms-flexbox;
   display: flex;
-  padding-top: 72px; }
+  padding-top: 35px; }
 
 .contact-page .content-area {
   padding: 3%;
