@@ -17,6 +17,11 @@
 							<h3>CONTACT INFO</h3>
 							<p><i class="fa fa-envelope"></i><a href="mailto:jeremyxu89@gmail.com">info@inhabitent.com</a></p>
 							<p><i class="fa fa-phone"><a href="tel:1-647-570-0211">1-647-570-0211</a></i></p>
+							<p class="footer-icons-row" style="font-size: 1.2rem;">
+								<i class="fa fa-facebook-square" aria-hidden="true"></i>
+								<i class="fa fa-twitter-square" aria-hidden="true"></i>
+								<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+							</p>
 						</div>
 						<!-- contact info -->
 						<div class="footer-col">

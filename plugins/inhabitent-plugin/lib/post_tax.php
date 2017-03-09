@@ -201,10 +201,13 @@ function build_adventures_homepage($count){
 */
 
 function get_page_header(){
-	if(is_tax("Type")){					
-			the_archive_title( '<h1 class="page-title">', '</h1>' );
-			the_archive_description( '<div class="taxonomy-description">', '</div>');
-			}
+	if(is_tax("Type")){		
+			$taxonomyObject = get_queried_object();
+			?>
+
+			<h1 class="page-title" style="text-transform: uppercase;"> <?php echo($taxonomyObject->name);?> </h1>
+
+<?php	the_archive_description( '<div class="taxonomy-description">', '</div>');}
 }
 
 function get_content_header(){

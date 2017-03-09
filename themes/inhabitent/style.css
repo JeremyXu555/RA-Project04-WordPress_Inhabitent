@@ -1168,6 +1168,9 @@ a:visited {
 .contact-page .btn {
   width: 20%; }
 
+.widget_text .fa {
+  margin-right: 10px; }
+
 .search .content-area {
   padding: 3%;
   width: 67%;
@@ -1223,3 +1226,6 @@ a:visited {
 
 .footer img {
   padding: 7%; }
+
+.footer .footer-icons-row i {
+  margin-right: 10px; }
