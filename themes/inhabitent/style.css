@@ -1045,6 +1045,9 @@ a:visited {
 .single-adventures .main-navigation a {
   color: white; }
 
+.single-adventures .site-content {
+  padding-bottom: 20px; }
+
 .productType-info .shopStuff {
   display: -ms-flexbox;
   display: flex;
