@@ -1,6 +1,6 @@
 # RA-Project04-Inhabitent
 
-[Inhabitent WordPress Theme](https://curviest-assistant.000webhostapp.com/ "Inhabitent WordPress Theme")
+Live URL: [Inhabitent WordPress Theme](https://curviest-assistant.000webhostapp.com/ "Inhabitent WordPress Theme")
 
 ## Functionalities Introductions
 
